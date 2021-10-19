@@ -28,7 +28,6 @@ Ext.define('MyApp.view.main.Tech', {
             border: false,
             margin: 4,
             cls: ['all-panels', 'panel-darkblue'],
-            layout: 'anchor',
             anchor: '100% 15%',
         },
         {
@@ -55,7 +54,7 @@ Ext.define('MyApp.view.main.Tech', {
                 columnWidth: .89,
                 layout: 'anchor',
                 items:{
-                    //invisible anchor
+                    //height anchor
                     xtype: 'panel',
                     border: false,
                     margin: 0,
@@ -69,17 +68,71 @@ Ext.define('MyApp.view.main.Tech', {
                         margin: 4,
                         cls: ['all-panels', 'panel-blue', 'col-height'],
                         columnWidth: 0.11,
+                        height: 370,
                     },
                     {
                         xtype: 'panel',
                         border: false,
                         margin: 4,
                         cls: ['all-panels', 'panel-green', 'col-height'],
-                        layout: 'column',
+                        layout: 'anchor',
                         columnWidth: .89,
-                        items:[{
-
-                        }]
+                        items:{
+                            //height anchor
+                            xtype: 'panel',
+                            border: false,
+                            margin: 0,
+                            layout: 'anchor',
+                            anchor: '100% 100%',
+                            width: 570,
+                            height: 360,
+                            items:[{
+                                xtype: 'panel',
+                                border: false,
+                                margin: 4,
+                                cls: ['all-panels', 'panel-red'],
+                                layout: 'anchor',
+                                anchor: "100% 15%",
+                                items: [{
+                                    xtype: 'panel',
+                                    border: false,
+                                    margin: 4,
+                                    padding: 1,
+                                    cls: ['all-panels', 'panel-yellow'],
+                                    anchor: "100% 50%"
+                                },
+                                {
+                                    xtype: 'panel',
+                                    border: false,
+                                    margin: 4,
+                                    padding: 1,
+                                    cls: ['all-panels', 'panel-cyan'],
+                                    anchor: "100% 50%"
+                                }]
+                            },
+                            {
+                                xtype: 'panel',
+                                border: false,
+                                margin: 4,
+                                cls: ['all-panels', 'panel-purple'],
+                                layout: 'column',
+                                anchor: "100% 86%",
+                                items: [{
+                                    xtype: 'panel',
+                                    border: false,
+                                    margin: 4,
+                                    cls: ['all-panels', 'panel-black', 'col-height-less'],
+                                    columnWidth: 0.2,
+                                },
+                                {
+                                    xtype: 'panel',
+                                    border: false,
+                                    margin: 4,
+                                    cls: ['all-panels', 'panel-pink', 'col-height-less'],
+                                    columnWidth: 0.8,
+                                }]
+                            }]
+                        }
                     }]
                 }
             }]

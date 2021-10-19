@@ -14401,6 +14401,22 @@ div.x-border-layout-ct {
     border-color: red;
 }
 /* /home/user/Documents/git/Technical-Test/classic/src/view/main/Main.scss:127 */
+.panel-purple {
+    border-color: purple;
+}
+/* /home/user/Documents/git/Technical-Test/classic/src/view/main/Main.scss:131 */
+.panel-yellow {
+    border-color: yellow;
+}
+/* /home/user/Documents/git/Technical-Test/classic/src/view/main/Main.scss:135 */
+.panel-black {
+    border-color: black;
+}
+/* /home/user/Documents/git/Technical-Test/classic/src/view/main/Main.scss:139 */
 .col-height {
     height: 98% !important;
+}
+/* /home/user/Documents/git/Technical-Test/classic/src/view/main/Main.scss:143 */
+.col-height-less {
+    height: 97% !important;
 }
